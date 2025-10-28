@@ -66,7 +66,7 @@ obsidian-abcde-task-manager/
 
 ```powershell
 cd "C:\Chemin\Vers\Votre\Vault\Obsidian"
-git clone https://github.com/yourusername/obsidian-abcde-task-manager .
+git clone https://github.com/Btaoldai/obsidian-abcde-task-manager .
 .\scripts\setup.ps1
 ```
 
@@ -74,7 +74,7 @@ git clone https://github.com/yourusername/obsidian-abcde-task-manager .
 
 ```bash
 cd ~/chemin/vers/votre/vault/obsidian
-git clone https://github.com/yourusername/obsidian-abcde-task-manager .
+git clone https://github.com/Btaoldai/obsidian-abcde-task-manager .
 chmod +x scripts/setup.sh
 ./scripts/setup.sh
 ```
