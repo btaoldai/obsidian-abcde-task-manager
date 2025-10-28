@@ -350,8 +350,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📮 Contact & Support
 
-- **GitHub Issues**: [Report bugs or request features](https://github.com/yourusername/obsidian-abcde-task-manager/issues)
-- **Discussions**: [Ask questions and share ideas](https://github.com/yourusername/obsidian-abcde-task-manager/discussions)
+- **GitHub Issues**: [Report bugs or request features](https://github.com/Btaoldai/obsidian-abcde-task-manager/issues)
+- **Discussions**: [Ask questions and share ideas](https://github.com/Btaoldai/obsidian-abcde-task-manager/discussions)
 
 ---
 
