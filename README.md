@@ -67,7 +67,7 @@ obsidian-abcde-task-manager/
 ```powershell
 # 1. Clone repository into your Obsidian vault
 cd "C:\Path\To\Your\Obsidian\Vault"
-git clone https://github.com/yourusername/obsidian-abcde-task-manager .
+git clone https://github.com/Btaoldai/obsidian-abcde-task-manager .
 
 # 2. Run setup script
 .\scripts\setup.ps1
@@ -77,7 +77,7 @@ git clone https://github.com/yourusername/obsidian-abcde-task-manager .
 ```bash
 # 1. Clone repository into your Obsidian vault
 cd ~/path/to/your/obsidian/vault
-git clone https://github.com/yourusername/obsidian-abcde-task-manager .
+git clone https://github.com/Btaoldai/obsidian-abcde-task-manager .
 
 # 2. Run setup script
 chmod +x scripts/setup.sh
@@ -350,8 +350,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📮 Contact & Support
 
-- **GitHub Issues**: [Report bugs or request features](https://github.com/yourusername/obsidian-abcde-task-manager/issues)
-- **Discussions**: [Ask questions and share ideas](https://github.com/yourusername/obsidian-abcde-task-manager/discussions)
+- **GitHub Issues**: [Report bugs or request features](https://github.com/Btaoldai/obsidian-abcde-task-manager/issues)
+- **Discussions**: [Ask questions and share ideas](https://github.com/Btaoldai/obsidian-abcde-task-manager/discussions)
 
 ---
 
