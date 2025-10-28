@@ -1,0 +1,40 @@
+# Obsidian system files
+.obsidian/workspace*
+.obsidian/cache
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/graph.json
+.obsidian/starred.json
+.obsidian/bookmarks.json
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+
+# Backup files
+*.bak
+*.tmp
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Node modules (if using any plugins)
+node_modules/
+
+# Personal data (optional - uncomment if needed)
+# Projects/*
+# !Projects/README.md
