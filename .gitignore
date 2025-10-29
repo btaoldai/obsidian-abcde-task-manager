@@ -7,12 +7,10 @@
 .obsidian/starred.json
 .obsidian/bookmarks.json
 
-# macOS
+# OS system files
 .DS_Store
 .AppleDouble
 .LSOverride
-
-# Windows
 Thumbs.db
 ehthumbs.db
 Desktop.ini
@@ -22,7 +20,7 @@ $RECYCLE.BIN/
 *~
 .directory
 
-# Backup files
+# Backup & temp files
 *.bak
 *.tmp
 *.swp
@@ -32,9 +30,9 @@ $RECYCLE.BIN/
 # Logs
 *.log
 
-# Node modules (if using any plugins)
+# Node modules (if applicable)
 node_modules/
 
-# Personal data (optional - uncomment if needed)
+# Personal data (optional comment)
 # Projects/*
 # !Projects/README.md

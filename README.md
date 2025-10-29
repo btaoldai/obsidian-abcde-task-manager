@@ -1,374 +1,287 @@
-# 📋 Obsidian ABCDE Task Manager
+# 📋 ABCDE Task Manager for Obsidian
 
-> **Version 1.17** | A comprehensive priority-based task management system for Obsidian  
-> Created by Btaoldai | [MIT License](LICENSE)
+A **beautiful, fast, and intuitive** priority-based task management system for Obsidian. Organize tasks by **ABCDE priority** (A=Urgent, B=Important, C=Nice-to-have) with a unified creation button, Kanban board, and auto-generated dashboards.
 
-**[🇫🇷 Version française](README.fr.md)**
+**Status**: ✅ Production Ready | **Version**: 1.17 | **Language**: English
 
 ---
 
-## 🎯 Overview
+## 🎯 Features
 
-**ABCDE Task Manager** is an advanced task management system for Obsidian that implements the ABCDE priority method. It provides a unified dashboard, intelligent Kanban boards, dynamic project creation, and automated status tracking.
-
-### ✨ Key Features
-
-- **🎯 ABCDE Priority System**: A (Urgent - 7 days), B (Important - 14 days), C (Nice-to-have - 30 days)
-- **📊 Unified Dashboard**: Single-click access to all tasks, projects, and statistics
-- **🔄 Dynamic Categories**: Add custom categories on-the-fly during project creation
-- **📈 Smart Kanban Board**: Status-based filtering with drag & drop support
-- **🎨 Visual Status Management**: Color-coded badges and quick-change buttons
-- **📱 Real-time Stats**: Points system, progress tracking, and gamification
-- **🔗 Auto-linking**: Tasks automatically linked to project pages
-- **🕸️ Graph View**: Visual project relationships and dependencies
+- **📊 Beautiful Dashboard** - Real-time stats and task overview
+- **🎯 Priority System** - ABCDE classification (A, B, C)
+- **📦 5 Categories** - Administrative, Health, Professional, Wiki, Training
+- **🎨 Dynamic Kanban** - Drag & drop board for visual task management
+- **⚡ Unified Creation** - Single button to create tasks or projects
+- **🔔 Smart Status** - 5 status types (In Progress, Completed, Archived, Paused, Cancelled)
+- **📱 Responsive** - Works on desktop and mobile
+- **🚀 Performance** - Lightweight, instant loading
 
 ---
 
 ## 📦 What's Included
 
 ```
-obsidian-abcde-task-manager/
+.
+├── Dashboards/
+│   ├── Dashboard.md           # Main dashboard (start here!)
+│   └── Kanban-Board.md        # Kanban board view
+├── Projects/
+│   ├── Administrative/        # Administrative tasks & projects
+│   ├── Health/               # Health-related tasks
+│   ├── Professional/         # Work & professional tasks
+│   ├── Wiki/                 # Knowledge base & documentation
+│   ├── Training/             # Learning & training tasks
+│   ├── Inbox.md              # Quick task capture
+│   └── .gitkeep              # Empty folder markers
+├── src/
+│   ├── Status-in-progress.md # Status templates
+│   ├── Status-completed.md
+│   ├── Status-archived.md
+│   ├── Status-paused.md
+│   └── Status-cancelled.md
 ├── .obsidian/
 │   └── snippets/
-│       └── abcde-colors.css          # Color scheme for status badges
-├── Dashboards/
-│   ├── Dashboard.md                   # Main dashboard (v1.17)
-│   └── Kanban-Board.md               # Interactive Kanban board
-├── Projects/
-│   ├── Administrative/               # Administrative projects
-│   ├── Health/                       # Health-related projects
-│   ├── Professional/                 # Professional projects
-│   ├── Wiki/                         # Wiki/Documentation
-│   ├── Training/                     # Training & Learning
-│   └── Inbox.md                      # Quick task inbox
-├── src/
-│   ├── Status-in-progress.md         # Status: In Progress
-│   ├── Status-completed.md           # Status: Completed
-│   ├── Status-archived.md            # Status: Archived
-│   ├── Status-paused.md              # Status: Paused
-│   ├── Status-cancelled.md           # Status: Cancelled
-│   └── Dashboard-Graph-View.md       # Graph view configuration
+│       ├── abcde-colors.css  # Beautiful color scheme
+│       └── modal-fix.css     # Modal UI fixes
 ├── scripts/
-│   ├── setup.ps1                     # Windows setup script
-│   └── setup.sh                      # Linux/Mac setup script
-├── README.md                         # This file (English)
-├── README.fr.md                      # French version
-├── LICENSE                           # MIT License
-└── .gitignore                        # Git ignore rules
+│   └── setup-user.ps1        # User setup script (Windows)
+├── README.md
+└── .gitignore
 ```
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Installation Guide (Step by Step)
 
-### Option A: Automated Setup (Recommended)
+### **Step 1: Clone the Repository**
 
-#### Windows (PowerShell)
-```powershell
-# 1. Clone repository into your Obsidian vault
-cd "C:\Path\To\Your\Obsidian\Vault"
-git clone https://github.com/Btaoldai/obsidian-abcde-task-manager .
-
-# 2. Run setup script
-.\scripts\setup.ps1
-```
-
-#### Linux/Mac (Bash)
 ```bash
-# 1. Clone repository into your Obsidian vault
-cd ~/path/to/your/obsidian/vault
-git clone https://github.com/Btaoldai/obsidian-abcde-task-manager .
-
-# 2. Run setup script
-chmod +x scripts/setup.sh
-./scripts/setup.sh
+git clone https://github.com/yourusername/obsidian-abcde-task-manager.git
+cd obsidian-abcde-task-manager
 ```
 
-### Option B: Manual Setup
+Or download ZIP and extract to your preferred location.
 
-1. **Clone repository** into your Obsidian vault directory
-2. **Install required plugins**:
-   - Dataview (required)
-   - Tasks (required)
-   - Kanban (optional, for drag & drop)
-3. **Enable CSS snippet**:
-   - Settings → Appearance → CSS snippets → Enable `abcde-colors`
-4. **Enable Dataview JavaScript**:
-   - Settings → Dataview → Enable JavaScript Queries
-5. **Restart Obsidian**
-6. **Open Dashboard**: `Dashboards/Dashboard.md`
+### **Step 2: Open in Obsidian**
+
+1. Open **Obsidian**
+2. Click **"Open Folder as Vault"**
+3. Select the `obsidian-abcde-task-manager` folder
+4. Click **"Open"**
+
+### **Step 3: Install Required Plugins**
+
+**Open Obsidian Settings** > **Community Plugins** > **Browse**
+
+Install these 2 plugins:
+
+1. **Dataview** (by blacksmithgu)
+   - Required for queries and dashboards
+   
+2. **Tasks** (by Obsidian Tasks Group)
+   - Required for task management
+
+1. Calendar 
+
+### **Step 4: Configure Plugins**
+
+**Enable Dataview JavaScript:**
+1. Settings > **Dataview**
+2. Toggle ON: **JavaScript Queries**
+
+**Enable CSS Snippet:**
+1. Settings > **Appearance** > **CSS Snippets**
+2. Toggle ON: **abcde-colors**
+3. Toggle ON: **modal-fix**
+
+### **Step 5: Restart Obsidian**
+
+Close and reopen Obsidian completely.
+
+### **Step 6: Start Using!**
+
+1. Open **Dashboards/Dashboard.md**
+2. Click **"🎯 ➕ Create Task or Project"**
+3. Choose task type, fill in details
+4. Click **"✅ Create"**
 
 ---
 
-## 📚 User Guide
+## 📖 Usage Guide
 
-### Creating a Project
+### **Creating Tasks**
 
-1. Open `Dashboards/Dashboard.md`
-2. Click **"🎯 ➕ Create Task or Project"**
-3. Select **"🎯 Full Project"**
-4. Fill in:
-   - **Name**: Project title
-   - **Category**: Choose from default or add custom
-   - **Priority**: A (Urgent), B (Important), C (Nice-to-have)
-   - **Tags**: Additional tags (optional)
-   - **Deadline**: Custom date (optional)
-5. Click **"✅ Create"**
+Click the **"🎯 ➕ Create Task or Project"** button on the Dashboard:
 
-**Result**: Project file created with:
-- Properties (tags, status, priority, deadline)
-- Quick status change buttons
-- Task checklist
-- Objectives, Notes, Resources sections
+1. **Type**: Quick Task or Full Project
+2. **Name**: Task description
+3. **Category**: Choose from 5 categories
+4. **Tags**: Add extra tags (optional)
+5. **Priority**: A (Urgent), B (Important), C (Nice-to-have)
+6. **Deadline**: Set or auto-assign based on priority
 
-### Creating a Quick Task
+### **Task Properties**
 
-1. Open `Dashboards/Dashboard.md`
-2. Click **"🎯 ➕ Create Task or Project"**
-3. Select **"⚡ Quick Task"**
-4. Fill in details
-5. Click **"✅ Create"**
+All tasks have these frontmatter properties:
 
-**Result**: 
-- Task added to `Projects/Inbox.md`
-- Project page created with link
-- Appears in Dashboard "Today" section
+```yaml
+tags:
+  - task              # Task marker
+  - administrative    # Category
+  - A                 # Priority
+status: in-progress   # Current status
+created: YYYY-MM-DD   # Creation date
+deadline: YYYY-MM-DD  # Deadline
+priority: A           # Priority level
+```
 
-### Changing Project Status
+### **Changing Task Status**
 
-**Method 1: Quick Buttons** (Fastest)
-1. Open project file
-2. Section "💡 Quick Status Change"
-3. Click desired status button:
-   - 🔵 In Progress
-   - ✅ Completed
-   - 📦 Archived
-   - ⏸️ Paused
-   - ❌ Cancelled
+Each task file has a **"💡 Quick Status Change"** section:
+- Click the **status field** in Properties panel
+- Choose: `in-progress`, `completed`, `archived`, `paused`, `cancelled`
 
-**Method 2: Properties Dropdown**
-1. Open project file
-2. Click `status: in-progress` in Properties
-3. Select new status from dropdown
+### **Using the Dashboard**
 
-### Using Kanban Board
+**Calendar Picker**: Select any date to view tasks for that day
 
-**Dashboard View** (Read-only):
-- `Dashboards/Dashboard.md` → Section "📊 KANBAN"
-- Filtered by status + priority
-- Sections: In Progress (A/B/C), Paused, Completed
+**Sections**:
+- 🔴 **TODAY - URGENT** - Critical A-priority tasks
+- 📊 **KANBAN VIEW** - Visual board (A, B, C, Completed)
+- 📊 **STATISTICS** - Points earned, levels, weekly stats
 
-**Interactive Board** (Drag & Drop):
-1. Dashboard → Click **"📊 Kanban"** button
-2. Opens `Dashboards/Kanban-Board.md`
-3. Drag tasks between columns
-4. Drop in "✅ Completed" to mark done
+### **Kanban Board**
+
+1. Click **"📊 Kanban Board"** button on Dashboard
+2. Drag tasks between columns
+3. See color-coded priorities at a glance
 
 ---
 
 ## 🎨 Customization
 
-### Adding Custom Categories
+### **Change Categories**
 
-**During Project Creation**:
-The modal allows adding custom categories on-the-fly. Simply type a new category name when prompted.
-
-**Permanent Categories**:
-Edit `Dashboards/Dashboard.md` and add to `cats` array:
-
+Edit `Dashboards/Dashboard.md` line with:
 ```javascript
 const cats = [
-    {v:"administrative",t:"🔵 Administrative"},
-    {v:"health",t:"🟢 Health"},
-    {v:"professional",t:"🟣 Professional"},
-    {v:"wiki",t:"🔷 Wiki"},
-    {v:"training",t:"🟠 Training"},
-    {v:"yourcategory",t:"🎯 Your Category"}  // Add here
+    {v:"administrative",t:"Administrative",e:"🔵"},
+    // Add your categories here
 ];
 ```
 
-### Changing Color Scheme
+### **Modify Colors**
 
 Edit `.obsidian/snippets/abcde-colors.css`:
-
 ```css
-/* Status colors */
-.status-in-progress { background: #3B82F6; }  /* Blue */
-.status-completed { background: #10B981; }    /* Green */
-.status-archived { background: #6B7280; }     /* Gray */
-.status-paused { background: #F59E0B; }       /* Orange */
-.status-cancelled { background: #EF4444; }    /* Red */
+--color-primary: #your-color;
+--color-success: #your-color;
+/* ... more variables ... */
 ```
 
-### Adding Status Values
+### **Adjust Priorities**
 
-1. Create file in `src/`: `Status-yourvalue.md`
-2. Content:
-```yaml
----
-status: yourvalue
-tags:
-  - reference
-  - status
----
-
-# Your Status Name
+Edit default deadline days in `Dashboards/Dashboard.md`:
+```javascript
+const days = type === "task" ? 
+    (priority==="A"?0:priority==="B"?3:7)  // Change these numbers
+    : (priority==="A"?7:priority==="B"?14:30);
 ```
-3. Restart Obsidian
-4. Dropdown will include new status
 
 ---
 
-## 📊 Priority System Explained
+## 📋 File Structure Explained
 
-### A - Urgent (🔴)
-- **Deadline**: 7 days from creation
-- **Points**: 5 points when completed
-- **Use**: Critical tasks, time-sensitive projects
-- **Example**: Security incident response, deadline submissions
+| Folder | Purpose |
+|--------|---------|
+| **Dashboards/** | Main interface - start here |
+| **Projects/** | Your actual tasks and projects |
+| **src/** | Status file templates (do not modify) |
+| **.obsidian/** | Obsidian config & CSS snippets |
+| **scripts/** | Setup automation scripts |
 
-### B - Important (🟠)
-- **Deadline**: 14 days from creation
-- **Points**: 3 points when completed
-- **Use**: Important but not urgent, strategic projects
-- **Example**: Feature development, documentation updates
+---
 
-### C - Nice-to-have (🟡)
-- **Deadline**: 30 days from creation
-- **Points**: 1 point when completed
-- **Use**: Low priority, improvement tasks
-- **Example**: Code refactoring, nice-to-have features
+## 🆘 Troubleshooting
 
-### Points & Gamification
+**"Dashboard shows errors?"**
+- Ensure Dataview & Tasks plugins are installed & enabled
+- Check CSS snippets are enabled in Settings > Appearance
 
-**Daily Stats**:
-- Total points earned today
-- Tasks completed count
-- Level based on points (Beginner → Champion)
+**"Tasks not appearing?"**
+- Verify files are in correct folders (Projects/Administrative/, etc.)
+- Make sure frontmatter has correct tags format
 
-**Weekly Stats**:
-- Total tasks completed this week
-- Total points accumulated
+**"Create button not working?"**
+- Refresh the page (Cmd/Ctrl + R)
+- Close and reopen Obsidian
+- Check console for errors (Developer Tools)
+
+**"Kanban not loading?"**
+- Install Kanban plugin from Community Plugins (optional but recommended)
+
+---
+
+## ⚙️ Requirements
+
+- **Obsidian** v1.4.0+
+- **Plugins**:
+  - Dataview (required)
+  - Tasks (required)
+  - Kanban (optional, for board view)
+
+---
+
+## 📊 Statistics & Scoring
+
+**Daily Points**:
+- 🔴 A-Priority completed: **5 pts**
+- 🟠 B-Priority completed: **3 pts**
+- 🟡 C-Priority completed: **1 pt**
 
 **Levels**:
-- 🥉 Beginner: 0-4 points
-- 🔰 Confirmed: 5-9 points
-- 🥈 Intermediate: 10-14 points
-- 🥇 Advanced: 15-19 points
-- 👑 Champion: 20+ points
+- 🥉 Beginner: 0-4 pts
+- 🔰 Confirmed: 5-9 pts
+- 🥈 Intermediate: 10-14 pts
+- 🥇 Advanced: 15-19 pts
+- 👑 Champion: 20+ pts
 
 ---
 
-## 🔌 Required Plugins
+## 🎯 Best Practices
 
-### Dataview
-**Required** | [Install](https://github.com/blacksmithgu/obsidian-dataview)
-
-Enables dashboard queries, dynamic tables, and smart filtering.
-
-**Configuration**:
-- Settings → Dataview → Enable JavaScript Queries → **ON**
-
-### Tasks
-**Required** | [Install](https://github.com/obsidian-tasks-group/obsidian-tasks)
-
-Provides task management, due dates, and filtering capabilities.
-
-### Kanban
-**Optional** | [Install](https://github.com/mgmeyers/obsidian-kanban)
-
-Enables drag & drop functionality in Kanban board.
-
----
-
-## 🐛 Troubleshooting
-
-### Dashboard Not Loading
-
-**Issue**: Dashboard shows code instead of rendered view  
-**Solution**: 
-1. Enable Dataview plugin
-2. Settings → Dataview → Enable JavaScript Queries → **ON**
-3. Restart Obsidian
-
-### Status Dropdown Empty
-
-**Issue**: Properties dropdown shows no status values  
-**Solution**:
-1. Verify 5 status files exist in `src/`
-2. Open each status file once (forces scan)
-3. Restart Obsidian
-4. Wait 10 seconds for indexing
-
-### Buttons Not Working
-
-**Issue**: Status buttons don't change status  
-**Solution**:
-1. Enable Dataview JavaScript (see above)
-2. Check browser console for errors (Ctrl+Shift+I)
-3. Verify file has `status:` property in frontmatter
-
-### Tasks Not Appearing in Dashboard
-
-**Issue**: Created tasks don't show up  
-**Solution**:
-1. Verify task has correct tags (`#task`, `#categoryname/A1`)
-2. Check due date format: `📅 YYYY-MM-DD`
-3. Refresh dashboard (close and reopen)
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit changes (`git commit -m 'Add AmazingFeature'`)
-4. Push to branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+1. **Create in Bulk** - Add all tasks for the week at once
+2. **Use Categories** - Keep tasks organized by type
+3. **Set Priorities** - Be honest about what's urgent
+4. **Review Weekly** - Check statistics on Sundays
+5. **Archive Old Tasks** - Keep Projects folder clean
 
 ---
 
 ## 📝 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-**Created by Btaoldai**
+MIT License - Feel free to use, modify, and share!
 
 ---
 
-## 🙏 Acknowledgments
+## 🤝 Support
 
-- ABCDE Priority Method
-- Obsidian Community
-- Dataview Plugin by blacksmithgu
-- Tasks Plugin by Obsidian Tasks Group
-- Kanban Plugin by mgmeyers
+For issues or suggestions, please open an issue on GitHub.
 
 ---
 
-## 📮 Contact & Support
+## 🎉 Ready to Get Started?
 
-- **GitHub Issues**: [Report bugs or request features](https://github.com/Btaoldai/obsidian-abcde-task-manager/issues)
-- **Discussions**: [Ask questions and share ideas](https://github.com/Btaoldai/obsidian-abcde-task-manager/discussions)
+1. ✅ Clone/extract repository
+2. ✅ Open in Obsidian
+3. ✅ Run setup script (Windows) or follow manual steps
+4. ✅ Install plugins
+5. ✅ Click **"🎯 ➕ Create Task or Project"**
+6. ✅ Start managing tasks!
 
----
-
-## 🗺️ Roadmap
-
-### Version 1.18 (Planned)
-- [ ] Templates system for common project types
-- [ ] Import/Export functionality
-- [ ] Mobile optimization
-- [ ] Dashboard themes
-
-### Version 2.0 (Future)
-- [ ] Multi-language support (FR, ES, DE)
-- [ ] Advanced filtering and search
-- [ ] Calendar integration
-- [ ] Team collaboration features
+**Happy productivity! 🚀**
 
 ---
 
-**⭐ If this project helps you, please star the repository!**
+**Version**: 1.17 | **Updated**: 2025-10-29 | **Status**: Production Ready
